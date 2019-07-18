@@ -1,4 +1,4 @@
-# CRMint
+# CRMint (Vihos)
 
 **Make reliable data integration and data processing with Google easy for
 advertisers.**
