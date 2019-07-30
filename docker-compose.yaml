@@ -92,8 +92,8 @@ services:
       - "4200:4200"
     volumes:
       - ./frontend/src:/app/frontend/src
-    depends_on:
-      - backends
+#    depends_on:
+#      - backends
 
 volumes:
   db_data:

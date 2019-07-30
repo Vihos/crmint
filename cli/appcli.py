@@ -74,9 +74,14 @@ class CRMintCLI(click.MultiCommand):
   def get_command(self, ctx, name):
     ns = {}
     full_name = os.path.join(PLUGIN_FOLDER, "%s%s" % (name, ".py"))
-    with open(full_name) as f:
-      code = compile(f.read(), full_name, 'exec')
-      eval(code, ns, ns)
+
+    try:
+      with open(full_name) as f:
+        code = compile(f.read(), full_name, 'exec')
+        eval(code, ns, ns)
+    except IOError:
+      pass
+
     return ns.get('cli', None)
 
   def resolve_command(self, ctx, args):

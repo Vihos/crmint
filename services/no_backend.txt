@@ -1,0 +1,4 @@
+db
+migrations
+seeds
+frontend
