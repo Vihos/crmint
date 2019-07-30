@@ -10,16 +10,18 @@
 // $crmi-app-primary: mat-palette($mat-teal, A400)
 
 $crmi-primary: (
-  50: #21cccb,
-  100: #21cccb,
-  200: #21cccb,
-  300: #21cccb,
-  400: #21cccb,
-  500: #21cccb,
-  600: #21cccb,
-  700: #21cccb,
-  800: #21cccb,
-  900: #21cccb,
+  50: #00d09d,
+  100: #00d09d,
+  200: #00d09d,
+  300: #00d09d,
+  400: #00d09d,
+  // Primary
+  500: #00d09d,
+  600: #00d09d,
+  // Accent
+  700: #00d09d,
+  800: #00d09d,
+  900: #00d09d,
   A100: #ff80ab,
   A200: #ff4081,
   A400: #f50057,
@@ -42,9 +44,11 @@ $crmi-primary: (
   )
 );
 
+//$crmi-app-primary: mat-palette($crmi-primary, 700);
 $crmi-app-primary: mat-palette($crmi-primary, 700);
 $crmi-app-accent: mat-palette($crmi-primary, 500);
 $crmi-app-warn: mat-palette($mat-orange, 800);
+$crmi-app-action: mat-palette($mat-orange, 200);
 $crmi-app-theme: mat-light-theme($crmi-app-primary, $crmi-app-accent, $crmi-app-warn);
 
 // Include the default theme styles.
@@ -87,7 +91,7 @@ body {
       color: #2196F3;
       &:hover {
         transition: all .2s ease-in;
-        color: #21cccb;
+        color: #00d09d;
       }
     }
   }
@@ -211,7 +215,7 @@ body {
   }
 
   .mat-ink-bar {
-    background-color: #21CCCB;
+    background-color: #00d09d;
   }
   .crmi-card-list {
     margin: 0;

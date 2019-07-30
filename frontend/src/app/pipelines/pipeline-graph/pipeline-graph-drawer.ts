@@ -37,7 +37,7 @@ export class PipelineGraphDrawer {
   // Tooltip
   private tooltip = new Konva.Text({
     text: '',
-    fontFamily: 'Roboto',
+    fontFamily: 'Roboto, "Helvetica Neue", sans-serif',
     fontSize: 12,
     padding: 5,
     fill: 'white',
@@ -228,7 +228,7 @@ export class PipelineGraphDrawer {
       y: 4,
       text: jobText,
       fontSize: 15,
-      fontFamily: 'Roboto',
+      fontFamily: 'Roboto, "Helvetica Neue", sans-serif',
       padding: 10,
       fill: hovered ? this.highlightColor : this.textColor,
       fontStyle: 'normal'
@@ -437,7 +437,7 @@ export class PipelineGraphDrawer {
         x: 23,
         y: 1,
         text: menuItem.text,
-        fontFamily: 'Roboto',
+        fontFamily: 'Roboto, "Helvetica Neue", sans-serif',
         fill: this.context.pipeline.blocked_managing() ? this.blockedTextColor : this.textColor,
         fontSize: 15,
         padding: 10

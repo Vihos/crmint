@@ -22,7 +22,7 @@ import { environment } from 'environments/environment';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = `Delve App • ${environment.app_title}`;
+  title = `Scheduler • ${environment.app_title}`;
 
   alerts = [
     // Example

@@ -24,7 +24,7 @@
             <mat-icon>play_arrow</mat-icon>
             Run pipeline
           </button>
-          <button mat-raised-button color="warn" [routerLink]="['/pipelines', pipeline.id, 'edit']" [disabled]="!pipeline.showed_running()">
+          <button mat-raised-button class="edit-btn" [routerLink]="['/pipelines', pipeline.id, 'edit']" [disabled]="!pipeline.showed_running()">
             <mat-icon>edit</mat-icon>
             Edit
           </button>
